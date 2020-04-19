@@ -20,6 +20,18 @@ const Subhead = styled.p`
   font-weight: 500;
 `;
 
+const Button = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background: #fff;
+  color: #333 !important;
+  padding: 10px 20px;
+  font-size: 18px;
+`;
+
 class Jumbotron extends Component {
   render() {
     return (
@@ -31,6 +43,9 @@ class Jumbotron extends Component {
                 <div className="pt-4 mt-4">
                   <Header>React for Rails developers</Header>
                   <Subhead>Subheadercharge your RoR Apps with React.js</Subhead>
+                  <div className="cta-wrapper">
+                    <Button className="btn fancy-btn">Get Started</Button>
+                  </div>
                 </div>
               </div>
               <div className="col col-sm-12 col-md-7">
